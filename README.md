@@ -10,4 +10,4 @@ Command I used to run the image locally:
 
 Please Find below the screenshot:
 
-image.png
+![image](https://user-images.githubusercontent.com/87351344/195417090-de335022-bd6b-4033-9bcb-985d4e657105.png)

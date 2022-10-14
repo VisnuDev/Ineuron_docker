@@ -13,9 +13,9 @@ jobs:
     runs-on: ubuntu-latest
 
     steps:
-    - uses: docker/build-push-action@v2
+    - uses: docker/build-push-action@v3
     - name: Build the Docker image
       run: |
         echo "${{ secrets.Docker_passwd }}" | docker login -u "visnudev" --password-stdin
-        docker build -t visnu-flask-app-githubactions:latest ./Task4-github_action/.
+        docker build -t visnu-flask-app-githubactions ./Task4-github_action/.
         docker push visnu-flask-app-githubactions:latest

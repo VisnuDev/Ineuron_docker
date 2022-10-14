@@ -18,4 +18,4 @@ jobs:
       run: |
         echo "${{ secrets.Docker_passwd }}" | docker login -u "visnudev" --password-stdin
         docker build -t visnu-flask-app-githubactions:$(date +%s) ./Task4-github_action/.
-        docker push visnu-flask-app-githubactions/$(date +%s)
+        docker push visnu-flask-app-githubactions:$(date +%s)

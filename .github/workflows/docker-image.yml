@@ -17,5 +17,5 @@ jobs:
     - name: Build the Docker image
       run: |
         echo "${{ secrets.Docker_passwd }}" | docker login -u "visnudev" --password-stdin
-        docker build -t visnu-flask-app-githubactions ./Task4-github_action/.
-        docker push ./Task4-github_action/visnu-flask-app-githubactions:latest
+        docker build -t visnudev/visnu-flask-app-githubactions ./Task4-github_action/.
+        docker push visnudev/visnu-flask-app-githubactions:latest

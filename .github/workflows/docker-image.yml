@@ -15,4 +15,4 @@ jobs:
     steps:
     - uses: actions/checkout@v3
     - name: Build the Docker image
-      run: docker build --tag visnu-flask:$(date +%s) /Task4-github_action/.
+      run: docker build -t visnu-flask:$(date +%s) ./Task4-github_action/.
